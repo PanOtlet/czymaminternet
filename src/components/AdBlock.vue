@@ -1,19 +1,18 @@
 <script>
-    import adblock from 'vue-adblock'
- 
+import adblock from "vue-adblock";
+
 export default {
-  name: 'app',
+  name: "app",
   components: {
     adblock
   },
-  data () {
+  data() {
     return {
-      add:''
-    }
+      add: ""
+    };
   }
-}
+};
 </script>
 
 <style>
-
 </style>

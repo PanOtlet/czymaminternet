@@ -1,4 +1,5 @@
 <template>
+  <div id="app">
   <v-app>
     <v-navigation-drawer
       persistent
@@ -14,6 +15,7 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
+          :to="item.path"
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
@@ -39,7 +41,7 @@
       </v-btn> -->
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
+    <router-view/>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -57,35 +59,47 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
+
+    <v-footer class="pa-3">
+      <v-spacer></v-spacer>
+      <div>&copy; CoffeePenguin.com {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  data () {
+  data() {
     return {
+      title: "CzyMamInternet.pl",
       clipped: false,
-      drawer: false,
+      drawer: true,
       fixed: false,
-      items: [{
-        icon: 'fas fa-shapes',
-        title: 'CoffeePenguin.com',
-        path: 'https://coffeepenguin.com'
-      }],
+      items: [
+        {
+          icon: "fas fa-shapes",
+          title: "Strona główna",
+          path: "/",
+          meta: {
+            title: "Strona główna | " + this.title
+          }
+        },
+        {
+          icon: "fas fa-shapes",
+          title: "O nas",
+          path: "/o-nas"
+        },
+        {
+          icon: "fas fa-shapes",
+          title: "Test szybkości",
+          path: "/speedtest"
+        }
+      ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Czy mam internet?'
-    }
+      rightDrawer: false
+    };
   }
-}
+};
 </script>

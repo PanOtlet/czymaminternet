@@ -12,33 +12,35 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
 
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   },
-  data: function(){
+  data: function() {
     return {
       info: this.getUserIP()
-    }
+    };
   },
   methods: {
-      getUserIP(){
-        return axios.get('https://api.ipify.org/?format=json')
+    getUserIP() {
+      return axios
+        .get("https://api.ipify.org/?format=json")
         .then(response => (this.info = response.data.ip))
-        .catch(error => this.blocked(error))
-        },
-      blocked(error){
-        let info = "Blokada reklam jest uruchomiona! Prosimy o wyłączenie, bo nie uda nam się pokazać Ci strony!";
-        this.info = info;
-        // eslint-disable-next-line
-        console.log(error);
-        return "Wyłącz AdBlock!"
+        .catch(error => this.blocked(error));
+    },
+    blocked(error) {
+      let info =
+        "Blokada reklam jest uruchomiona! Prosimy o wyłączenie, bo nie uda nam się pokazać Ci strony!";
+      this.info = info;
+      // eslint-disable-next-line
+      console.log(error);
+      return "Wyłącz AdBlock!";
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
