@@ -10,18 +10,21 @@
       fixed
       app
     >
-      <v-list>
+      <v-list two-line subheader>
         <v-list-tile
           value="true"
           v-for="(item, i) in items"
           :key="i"
           :to="item.path"
+          class="black--text"
+          active-class="purple--text"
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            <v-list-tile-sub-title v-text="item.subtitle"></v-list-tile-sub-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
@@ -29,6 +32,8 @@
     <v-toolbar
       app
       :clipped-left="clipped"
+      dark
+      color="purple"
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <!-- <v-btn icon @click.stop="miniVariant = !miniVariant">
@@ -80,24 +85,25 @@ export default {
         {
           icon: "fas fa-home",
           title: "Strona główna",
-          path: "/",
-          meta: {
-            title: "Strona główna | " + this.title
-          }
+          subtitle: "Informacje o Twoim połączeniu",
+          path: "/"
         },
         {
           icon: "fas fa-tachometer-alt",
           title: "Test szybkości",
+          subtitle: "Przetestuj szybkość łącza!",
           path: "/speedtest"
         },
         {
           icon: "fas fa-server",
           title: "Usługi webmasterskie",
+          subtitle: "Specjaliści dla Ciebie!",
           path: "/webmaster"
         },
         {
           icon: "fas fa-user-secret",
           title: "O nas",
+          subtitle: "Poznaj twórców strony",
           path: "/o-nas"
         }
       ],
@@ -108,3 +114,9 @@ export default {
   }
 };
 </script>
+
+<style>
+a:link {
+  color: white;
+}
+</style>
