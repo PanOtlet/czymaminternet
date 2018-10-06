@@ -12,18 +12,3 @@
     <iframe width="100%" height="650px" frameborder="0" src="https://coffeepenguin.speedtestcustom.com"></iframe>
   </div>
 </template>
-
-<script>
-// import VueFrame from "vue-frame";
-// export default {
-//   components: { VueFrame },
-//   data() {
-//     return {
-//       /*...*/
-//     };
-//   },
-//   methods: {
-//     /*...*/
-//   }
-// };
-</script>

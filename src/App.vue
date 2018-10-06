@@ -78,7 +78,7 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "fas fa-shapes",
+          icon: "fas fa-home",
           title: "Strona główna",
           path: "/",
           meta: {
@@ -86,14 +86,19 @@ export default {
           }
         },
         {
-          icon: "fas fa-shapes",
-          title: "O nas",
-          path: "/o-nas"
-        },
-        {
-          icon: "fas fa-shapes",
+          icon: "fas fa-tachometer-alt",
           title: "Test szybkości",
           path: "/speedtest"
+        },
+        {
+          icon: "fas fa-server",
+          title: "Usługi webmasterskie",
+          path: "/webmaster"
+        },
+        {
+          icon: "fas fa-user-secret",
+          title: "O nas",
+          path: "/o-nas"
         }
       ],
       miniVariant: false,

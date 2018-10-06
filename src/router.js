@@ -36,6 +36,14 @@ const router = new Router({
       }
     },
     {
+      path: '/webmaster',
+      name: 'webmaster',
+      component: () => import(/* webpackChunkName: "speedtest" */ './views/WebMaster.vue'),
+      meta: {
+        title: 'Usługi webmasterskie i administracyjne'
+      }
+    },
+    {
       path: '/404',
       name: 'page404',
       component: () => import('./components/404.vue'),
