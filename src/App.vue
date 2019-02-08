@@ -67,7 +67,7 @@
 
     <v-footer class="pa-3">
       <v-spacer></v-spacer>
-      <div>&copy; CoffeePenguin.com {{ new Date().getFullYear() }}</div>
+      <div>&copy; IDKCloud.com {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
   </div>
