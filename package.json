@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "axios": "^0.18.0",
-    "vue": "^2.6.3",
+    "vue": "^2.6.4",
     "vue-adblock": "0.0.3",
     "vue-frame": "^1.0.7",
     "vue-router": "^3.0.2",
@@ -21,7 +21,7 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "vue-cli-plugin-vuetify": "^0.4.6",
     "@vue/cli-service": "^3.4.0",
-    "vue-template-compiler": "^2.6.3"
+    "vue-template-compiler": "^2.6.4"
   },
   "eslintConfig": {
     "root": true,
