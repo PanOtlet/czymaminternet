@@ -14,7 +14,7 @@
     "vue-adblock": "0.0.3",
     "vue-frame": "^1.0.7",
     "vue-router": "^3.0.6",
-    "vuetify": "^1.5.9"
+    "vuetify": "^1.5.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.5",
