@@ -57,7 +57,7 @@
       </v-card>
     </v-flex>
   </v-layout>
-    <v-btn href="https://coffeepenguin.com" block color="primary" dark mt-3>Sprawdź ofertę!</v-btn>
+    <v-btn href="https://idkcloud.com" block color="primary" dark mt-3>Sprawdź ofertę!</v-btn>
 
   <v-parallax
   mt-3
