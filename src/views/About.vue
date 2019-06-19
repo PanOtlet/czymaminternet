@@ -21,8 +21,7 @@
         </v-card-title>
 
         <v-card-actions>
-          <v-btn flat color="orange" href="https://coffeepenguin.com/oferta/">Sprawdź ofertę</v-btn>
-          <v-btn flat color="orange" href="https://coffeepenguin.com">Zobacz inne nasze projekty</v-btn>
+          <v-btn flat color="orange" href="https://idkcloud.com">Sprawdź ofertę</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
